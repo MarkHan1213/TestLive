@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/view_bg" />
+
+    <RelativeLayout
+        android:id="@+id/live_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/big_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="{一起读书吧}" />
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/big_title"
+
+            android:layout_centerHorizontal="true"
+
+            android:text="hhh" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_title"
+            android:layout_centerHorizontal="true"
+
+            android:text="hhh" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/live_replay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/replay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/darker_gray"
+            android:padding="5dp"
+            android:text="回放" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/replay_btn"
+            android:padding="5dp"
+            android:text="04月23日 14：00 33032参与" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="148:22" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/live"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/subscribe_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/darker_gray"
+            android:padding="5dp"
+            android:text="订阅" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

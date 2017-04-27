@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/d_live_banner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="14场>" />
+
+        <ViewFlipper
+            android:id="@+id/vf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/num"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            android:inAnimation="@anim/a_marquee_in"
+            android:outAnimation="@anim/a_marquee_out"
+            android:paddingLeft="50dp" />
+
+        <!-- <com.mark.testtx.view.MainAutoScrollUpView
+             android:id="@+id/vf"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingLeft="50dp" />-->
+    </RelativeLayout>
+
+
+</LinearLayout>
